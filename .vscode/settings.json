@@ -1,0 +1,46 @@
+{
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter",
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.fixAll.eslint": "explicit",
+        "source.unusedImports": "explicit",
+        "source.fixall.pylance": "explicit",
+        "source.organizeImports": "explicit"
+      },
+    },
+
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+  
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.language.colorizedBracketPairs": [],
+    "editor.formatOnPaste": false,
+    "python.testing.pytestArgs": [
+      "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+      "-v", // increase verbosity
+      "--cov-config=.coveragerc", // path of coverage config file
+      "--cov=./app/", // path of target module
+      "--cov-report=lcov:lcov.info", // use lcov as report type and set lcov.info as export file name
+      "--pdb", // turn to python debugger when encounter first error
+      "tests/"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "terminal.integrated.env.osx": {
+    "PYTHONPATH": "${workspaceFolder}"
+  },
+  "editor.fontVariations": false,
+  "rewrap.wrappingColumn": 99
+  
+  }
+  
